@@ -15,10 +15,13 @@ const Header = () => {
   return (
     <div>
       <div className="navbar bg-neutral text-neutral-content">
-        <a className="btn btn-ghost normal-case text-xl me-8">Auth Master</a>
-        <Link className="me-10" to="/">Home</Link>
-        <Link className="me-8" to="/login">Login</Link>
-        <Link className="me-8" to="/register">Register</Link>
+        <a className="btn btn-ghost normal-case text-xl me-5">Auth Master</a>
+        <Link className="me-5" to="/">Home</Link>
+        <Link className="me-5" to="/login">Login</Link>
+        <Link className="me-5" to="/register">Register</Link>
+        <Link className="me-5" to="/orders">Orders</Link>
+        {/* login korle profile dekhabe */}
+      {user &&   <Link className="me-5" to="/profile">Profile</Link>}
         {
           user ?
           <> <span>{user.email}</span>
