@@ -75,7 +75,7 @@ const Register = () => {
               />
               <label className="label">
                 <Link to='/login' className="label-text-alt link link-hover">
-                  Already have an account
+                  Already have an account?Please Login
                 </Link>
               </label>
             </div>
